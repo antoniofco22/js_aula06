@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Alarme</title>
+		<link rel="stylesheet" href="index.css">
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="all">
+			<div class="card">
+				<div class="elem">
+					<label>Tempo do Alarme:</label>
+					<select id="min">
+					</select>:
+					<select id="seg">
+					</select>
+				</div>
+				<div id="elem">
+					<button id="alarme" onclick="alarmar()" class="but">ALARMAR</button>
+				</div>
+				<div id="elem">
+					<div style="opacity:0;color: red;font-size: 125%;font-weight: 900;font-family: monospace;" id="falta" >Falta:</div>
+					<div id="contador">
+					00:00
+					</div>
+				</div>
+				<div id="elem">
+					<audio id="tick" controls loop>
+						<source src="img/tick.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
